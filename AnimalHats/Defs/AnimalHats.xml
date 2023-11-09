@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<Defs>
+
+<ThingCategoryDef>
+	<defName>Nuff_AnimalHat</defName>
+	<label>Animal Hats</label>
+	<parent>Headgear</parent>
+</ThingCategoryDef>
+
+<ThingDef Name="NuffAnimalHatQuestBase" ParentName="HatBase" Abstract="True">
+	<graphicData>
+		<graphicClass>Graphic_Single</graphicClass>
+	</graphicData>
+	<thingCategories>
+		<li>Nuff_AnimalHat</li>
+	</thingCategories>
+	<apparel>
+		<countsAsClothingForNudity>false</countsAsClothingForNudity>
+		<developmentalStageFilter>Child, Adult</developmentalStageFilter>
+		<bodyPartGroups>
+			<li>UpperHead</li>
+		</bodyPartGroups>
+		<layers>
+			<li>Overhead</li>
+		</layers>
+		<tags>
+			<li>AnimalHat</li>
+		</tags>
+		<defaultOutfitTags>
+			<li>Worker</li>
+		</defaultOutfitTags>
+	</apparel>
+	<smeltable>false</smeltable>
+</ThingDef>
+
+<ThingDef Name="NuffAnimalHatMakeableBase" ParentName="HatMakeableBase" Abstract="True">
+	<recipeMaker>
+		<researchPrerequisite>ComplexClothing</researchPrerequisite>
+		<recipeUsers>
+			<li>ElectricTailoringBench</li>
+			<li>HandTailoringBench</li>
+		</recipeUsers>
+		<skillRequirements>
+			<Crafting>8</Crafting>
+			<Artistic>4</Artistic>
+		</skillRequirements>
+	</recipeMaker>
+	<costList>
+		<Cloth>50</Cloth>
+		<Dye>1</Dye>
+	</costList>
+	<thingCategories>
+		<li>Nuff_AnimalHat</li>
+	</thingCategories>
+	<graphicData>
+		<graphicClass>Graphic_Single</graphicClass>
+	</graphicData>
+	<statBases>
+		<MaxHitPoints>100</MaxHitPoints>
+		<WorkToMake>3600</WorkToMake>
+		<Mass>0.12</Mass>
+		<EquipDelay>0.8</EquipDelay>
+	</statBases>
+	<apparel>
+		<countsAsClothingForNudity>false</countsAsClothingForNudity>
+		<developmentalStageFilter>Child, Adult</developmentalStageFilter>
+		<bodyPartGroups>
+			<li>UpperHead</li>
+		</bodyPartGroups>
+		<layers>
+			<li>Overhead</li>
+		</layers>
+		<tags>
+			<li>AnimalHat</li>
+		</tags>
+		<defaultOutfitTags>
+			<li>Worker</li>
+		</defaultOutfitTags>
+	</apparel>
+</ThingDef>
+
+<ThingDef ParentName="NuffAnimalHatMakeableBase">
+	<defName>Nuff_FrogHat</defName>
+	<label>Frog Hat</label>
+	<description>A hat in the style of the tenacious frog.</description>
+	<graphicData>
+		<texPath>AnimalBeanies/FrogHat/FrogHat</texPath>
+	</graphicData>
+	<apparel>
+		<wornGraphicPath>AnimalBeanies/FrogHat/FrogHat</wornGraphicPath>
+	</apparel>
+</ThingDef>
+
+<ThingDef ParentName="NuffAnimalHatMakeableBase">
+	<defName>Nuff_CatHat</defName>
+	<label>Cat Hat</label>
+	<description>A hat in the style of the mysterious cat.</description>
+	<graphicData>
+		<texPath>AnimalBeanies/CatHat/CatHat</texPath>
+	</graphicData>
+	<apparel>
+		<wornGraphicPath>AnimalBeanies/CatHat/CatHat</wornGraphicPath>
+	</apparel>
+</ThingDef>
+
+<ThingDef ParentName="NuffAnimalHatMakeableBase">
+	<defName>Nuff_DogHat</defName>
+	<label>Dog Hat</label>
+	<description>A hat in the style of the loyal dog.</description>
+	<graphicData>
+		<texPath>AnimalBeanies/DogHat/DogHat</texPath>
+	</graphicData>
+	<apparel>
+		<wornGraphicPath>AnimalBeanies/DogHat/DogHat</wornGraphicPath>
+	</apparel>
+</ThingDef>
+
+<ThingDef ParentName="NuffAnimalHatMakeableBase">
+	<defName>Nuff_MuffaloHat</defName>
+	<label>Muffalo Hat</label>
+	<description>A hat in the style of the cozy muffalo.</description>
+	<graphicData>
+		<texPath>AnimalBeanies/MuffaloHat/MuffaloHat</texPath>
+	</graphicData>
+	<apparel>
+		<wornGraphicPath>AnimalBeanies/MuffaloHat/MuffaloHat</wornGraphicPath>
+	</apparel>
+</ThingDef>
+
+<ThingDef ParentName="NuffAnimalHatMakeableBase">
+	<defName>Nuff_ChickenHat</defName>
+	<label>Chicken Hat</label>
+	<description>A hat in the style of the nimble chicken.</description>
+	<graphicData>
+		<texPath>AnimalBeanies/ChickenHat/ChickenHat</texPath>
+	</graphicData>
+	<apparel>
+		<wornGraphicPath>AnimalBeanies/ChickenHat/ChickenHat</wornGraphicPath>
+	</apparel>
+</ThingDef>
+
+<ThingDef ParentName="NuffAnimalHatMakeableBase">
+	<defName>Nuff_CowHat</defName>
+	<label>Cow Hat</label>
+	<description>A hat in the style of the placid cow.</description>
+	<graphicData>
+		<texPath>AnimalBeanies/CowHat/CowHat</texPath>
+	</graphicData>
+	<apparel>
+		<wornGraphicPath>AnimalBeanies/CowHat/CowHat</wornGraphicPath>
+	</apparel>
+</ThingDef>
+
+<ThingDef ParentName="NuffAnimalHatMakeableBase">
+	<defName>Nuff_PigHat</defName>
+	<label>Pig Hat</label>
+	<description>A hat in the style of the voracious pig.</description>
+	<graphicData>
+		<texPath>AnimalBeanies/PigHat/PigHat</texPath>
+	</graphicData>
+	<apparel>
+		<wornGraphicPath>AnimalBeanies/PigHat/PigHat</wornGraphicPath>
+	</apparel>
+</ThingDef>
+
+<ThingDef ParentName="NuffAnimalHatQuestBase">
+	<defName>Nuff_ThrumboHat</defName>
+	<label>Thrumbo Hat</label>
+	<description>A hat in the style of the majestic Thrumbo. Makes you feel unstoppable by wearing it.</description>
+	<graphicData>
+		<texPath>AnimalBeanies/ThrumboHat/ThrumboHat</texPath>
+	</graphicData>
+	<apparel>
+		<wornGraphicPath>AnimalBeanies/ThrumboHat/ThrumboHat</wornGraphicPath>
+	</apparel>
+	<statBases>
+		<MaxHitPoints>1000</MaxHitPoints>
+		<Mass>0.12</Mass>
+		<EquipDelay>0.8</EquipDelay>
+	</statBases>
+	<equippedStatOffsets>
+		<IncomingDamageFactor>-0.5</IncomingDamageFactor>
+	</equippedStatOffsets>
+</ThingDef>
+
+</Defs>

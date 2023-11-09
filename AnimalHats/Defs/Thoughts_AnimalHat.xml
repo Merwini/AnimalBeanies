@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<ThoughtDef>
+		<defName>AnimalHatThought</defName>
+		<label>Animal Hat</label>
+		<thoughtClass>Thought_Situational</thoughtClass>
+		<workerClass>Nuff.AnimalHats.ThoughtWorker_AnimalHat</workerClass>
+		<stages>
+			<li>
+				<label>wearing animal hat</label>
+				<description>This animal hat makes me feel warm and cuddly inside.</description>
+				<baseMoodEffect>5</baseMoodEffect>
+			</li>
+		</stages>
+	</ThoughtDef>
+	
+</Defs>
