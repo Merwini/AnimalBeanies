@@ -3,17 +3,17 @@
 <Defs>
 
 <ThingCategoryDef>
-	<defName>Nuff_AnimalHat</defName>
-	<label>Animal Hats</label>
+	<defName>Nuff_AnimalBeanie</defName>
+	<label>Animal Beanies</label>
 	<parent>Headgear</parent>
 </ThingCategoryDef>
 
-<ThingDef Name="NuffAnimalHatQuestBase" ParentName="HatBase" Abstract="True">
+<ThingDef Name="NuffAnimalBeanieQuestBase" ParentName="HatBase" Abstract="True">
 	<graphicData>
 		<graphicClass>Graphic_Single</graphicClass>
 	</graphicData>
 	<thingCategories>
-		<li>Nuff_AnimalHat</li>
+		<li>Nuff_AnimalBeanie</li>
 	</thingCategories>
 	<apparel>
 		<countsAsClothingForNudity>false</countsAsClothingForNudity>
@@ -25,16 +25,19 @@
 			<li>Overhead</li>
 		</layers>
 		<tags>
-			<li>AnimalHat</li>
+			<li>AnimalBeanie</li>
 		</tags>
 		<defaultOutfitTags>
 			<li>Worker</li>
 		</defaultOutfitTags>
 	</apparel>
 	<smeltable>false</smeltable>
+	<comps Inherit="false">
+		<li Class="CompProperties_Forbiddable"/>
+	</comps>
 </ThingDef>
 
-<ThingDef Name="NuffAnimalHatMakeableBase" ParentName="HatMakeableBase" Abstract="True">
+<ThingDef Name="NuffAnimalBeanieMakeableBase" ParentName="HatMakeableBase" Abstract="True">
 	<recipeMaker>
 		<researchPrerequisite>ComplexClothing</researchPrerequisite>
 		<recipeUsers>
@@ -42,7 +45,7 @@
 			<li>HandTailoringBench</li>
 		</recipeUsers>
 		<skillRequirements>
-			<Crafting>8</Crafting>
+			<Crafting>6</Crafting>
 			<Artistic>4</Artistic>
 		</skillRequirements>
 	</recipeMaker>
@@ -51,7 +54,7 @@
 		<Dye>1</Dye>
 	</costList>
 	<thingCategories>
-		<li>Nuff_AnimalHat</li>
+		<li>Nuff_AnimalBeanie</li>
 	</thingCategories>
 	<graphicData>
 		<graphicClass>Graphic_Single</graphicClass>
@@ -61,6 +64,7 @@
 		<WorkToMake>3600</WorkToMake>
 		<Mass>0.12</Mass>
 		<EquipDelay>0.8</EquipDelay>
+		<Insulation_Cold>12</Insulation_Cold>
 	</statBases>
 	<apparel>
 		<countsAsClothingForNudity>false</countsAsClothingForNudity>
@@ -72,18 +76,21 @@
 			<li>Overhead</li>
 		</layers>
 		<tags>
-			<li>AnimalHat</li>
+			<li>AnimalBeanie</li>
 		</tags>
 		<defaultOutfitTags>
 			<li>Worker</li>
 		</defaultOutfitTags>
 	</apparel>
+	<comps Inherit="false">
+		<li Class="CompProperties_Forbiddable"/>
+	</comps>
 </ThingDef>
 
-<ThingDef ParentName="NuffAnimalHatMakeableBase">
-	<defName>Nuff_FrogHat</defName>
-	<label>Frog Hat</label>
-	<description>A hat in the style of the tenacious frog.</description>
+<ThingDef ParentName="NuffAnimalBeanieMakeableBase">
+	<defName>Nuff_FrogBeanie</defName>
+	<label>Frog Beanie</label>
+	<description>A Beanie in the style of the tenacious frog.</description>
 	<graphicData>
 		<texPath>AnimalBeanies/FrogHat/FrogHat</texPath>
 	</graphicData>
@@ -92,10 +99,10 @@
 	</apparel>
 </ThingDef>
 
-<ThingDef ParentName="NuffAnimalHatMakeableBase">
-	<defName>Nuff_CatHat</defName>
-	<label>Cat Hat</label>
-	<description>A hat in the style of the mysterious cat.</description>
+<ThingDef ParentName="NuffAnimalBeanieMakeableBase">
+	<defName>Nuff_CatBeanie</defName>
+	<label>Cat Beanie</label>
+	<description>A Beanie in the style of the mysterious cat.</description>
 	<graphicData>
 		<texPath>AnimalBeanies/CatHat/CatHat</texPath>
 	</graphicData>
@@ -104,10 +111,10 @@
 	</apparel>
 </ThingDef>
 
-<ThingDef ParentName="NuffAnimalHatMakeableBase">
-	<defName>Nuff_DogHat</defName>
-	<label>Dog Hat</label>
-	<description>A hat in the style of the loyal dog.</description>
+<ThingDef ParentName="NuffAnimalBeanieMakeableBase">
+	<defName>Nuff_DogBeanie</defName>
+	<label>Dog Beanie</label>
+	<description>A Beanie in the style of the loyal dog.</description>
 	<graphicData>
 		<texPath>AnimalBeanies/DogHat/DogHat</texPath>
 	</graphicData>
@@ -116,10 +123,10 @@
 	</apparel>
 </ThingDef>
 
-<ThingDef ParentName="NuffAnimalHatMakeableBase">
-	<defName>Nuff_MuffaloHat</defName>
-	<label>Muffalo Hat</label>
-	<description>A hat in the style of the cozy muffalo.</description>
+<ThingDef ParentName="NuffAnimalBeanieMakeableBase">
+	<defName>Nuff_MuffaloBeanie</defName>
+	<label>Muffalo Beanie</label>
+	<description>A Beanie in the style of the cozy muffalo.</description>
 	<graphicData>
 		<texPath>AnimalBeanies/MuffaloHat/MuffaloHat</texPath>
 	</graphicData>
@@ -128,10 +135,10 @@
 	</apparel>
 </ThingDef>
 
-<ThingDef ParentName="NuffAnimalHatMakeableBase">
-	<defName>Nuff_ChickenHat</defName>
-	<label>Chicken Hat</label>
-	<description>A hat in the style of the nimble chicken.</description>
+<ThingDef ParentName="NuffAnimalBeanieMakeableBase">
+	<defName>Nuff_ChickenBeanie</defName>
+	<label>Chicken Beanie</label>
+	<description>A Beanie in the style of the nimble chicken.</description>
 	<graphicData>
 		<texPath>AnimalBeanies/ChickenHat/ChickenHat</texPath>
 	</graphicData>
@@ -140,10 +147,10 @@
 	</apparel>
 </ThingDef>
 
-<ThingDef ParentName="NuffAnimalHatMakeableBase">
-	<defName>Nuff_CowHat</defName>
-	<label>Cow Hat</label>
-	<description>A hat in the style of the placid cow.</description>
+<ThingDef ParentName="NuffAnimalBeanieMakeableBase">
+	<defName>Nuff_CowBeanie</defName>
+	<label>Cow Beanie</label>
+	<description>A Beanie in the style of the placid cow.</description>
 	<graphicData>
 		<texPath>AnimalBeanies/CowHat/CowHat</texPath>
 	</graphicData>
@@ -152,10 +159,10 @@
 	</apparel>
 </ThingDef>
 
-<ThingDef ParentName="NuffAnimalHatMakeableBase">
-	<defName>Nuff_PigHat</defName>
-	<label>Pig Hat</label>
-	<description>A hat in the style of the voracious pig.</description>
+<ThingDef ParentName="NuffAnimalBeanieMakeableBase">
+	<defName>Nuff_PigBeanie</defName>
+	<label>Pig Beanie</label>
+	<description>A Beanie in the style of the voracious pig.</description>
 	<graphicData>
 		<texPath>AnimalBeanies/PigHat/PigHat</texPath>
 	</graphicData>
@@ -164,10 +171,22 @@
 	</apparel>
 </ThingDef>
 
-<ThingDef ParentName="NuffAnimalHatQuestBase">
-	<defName>Nuff_ThrumboHat</defName>
-	<label>Thrumbo Hat</label>
-	<description>A hat in the style of the majestic Thrumbo. Makes you feel unstoppable by wearing it.</description>
+<ThingDef ParentName="NuffAnimalBeanieMakeableBase">
+	<defName>Nuff_RatBeanie</defName>
+	<label>Rat Beanie</label>
+	<description>A Beanie in the style of the sneaky rat.</description>
+	<graphicData>
+		<texPath>AnimalBeanies/RatHat/RatHat</texPath>
+	</graphicData>
+	<apparel>
+		<wornGraphicPath>AnimalBeanies/RatHat/RatHat</wornGraphicPath>
+	</apparel>
+</ThingDef>
+
+<ThingDef ParentName="NuffAnimalBeanieQuestBase">
+	<defName>Nuff_ThrumboBeanie</defName>
+	<label>Thrumbo Beanie</label>
+	<description>A Beanie in the style of the majestic Thrumbo. Makes you feel unstoppable by wearing it.</description>
 	<graphicData>
 		<texPath>AnimalBeanies/ThrumboHat/ThrumboHat</texPath>
 	</graphicData>
@@ -175,9 +194,11 @@
 		<wornGraphicPath>AnimalBeanies/ThrumboHat/ThrumboHat</wornGraphicPath>
 	</apparel>
 	<statBases>
+		<MarketValue>1069</MarketValue>
 		<MaxHitPoints>1000</MaxHitPoints>
 		<Mass>0.12</Mass>
 		<EquipDelay>0.8</EquipDelay>
+		<Insulation_Cold>20</Insulation_Cold>
 	</statBases>
 	<equippedStatOffsets>
 		<IncomingDamageFactor>-0.5</IncomingDamageFactor>

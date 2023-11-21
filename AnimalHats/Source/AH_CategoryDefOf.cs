@@ -6,11 +6,11 @@ using System.Threading.Tasks;
 using RimWorld;
 using Verse;
 
-namespace Nuff.AnimalHats
+namespace Nuff.AnimalBeanies
 {
     [DefOf]
     class AH_CategoryDefOf
     {
-        public static ThingCategoryDef Nuff_AnimalHat;
+        public static ThingCategoryDef Nuff_AnimalBeanie;
     }
 }

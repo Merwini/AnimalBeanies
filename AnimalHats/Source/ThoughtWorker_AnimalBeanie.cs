@@ -6,16 +6,16 @@ using System.Text;
 using System.Threading.Tasks;
 using Verse;
 
-namespace Nuff.AnimalHats
+namespace Nuff.AnimalBeanies
 {
-    public class ThoughtWorker_AnimalHat : ThoughtWorker
+    public class ThoughtWorker_AnimalBeanie : ThoughtWorker
     {
         protected override ThoughtState CurrentStateInternal(Pawn p)
         {
             List<Apparel> wornApparel = p.apparel.WornApparel;
             for (int i = 0; i < wornApparel.Count; i++)
             {
-                if (wornApparel[i].def.thingCategories.Contains(AH_CategoryDefOf.Nuff_AnimalHat))
+                if (wornApparel[i].def.thingCategories.Contains(AH_CategoryDefOf.Nuff_AnimalBeanie))
                 {
                     return true;
                 }

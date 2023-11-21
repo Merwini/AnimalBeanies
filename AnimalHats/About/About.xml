@@ -1,0 +1,14 @@
+<ModMetaData>
+	<name>Friend-Shaped Beanies</name>
+	<author>Nuff</author>
+  <packageId>Nuff.animalbeanies</packageId>
+	<supportedVersions>
+		<li>1.4</li>
+	</supportedVersions>
+	<description>Cute beanies for your colonists to wear. Makes them happier.</description>
+	<url></url>
+  <modDependencies>
+   </modDependencies>
+  <loadAfter>
+  </loadAfter>
+</ModMetaData>
